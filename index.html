@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read My Book</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/epub.js/0.3.88/epub.min.js"></script>
+</head>
+<body>
+    <h1>Read My Book</h1>
+    <div id="viewer" style="width: 100%; height: 600px;"></div>
+    <script>
+        var book = ePub("bukuaku.epub"); // Ganti dengan nama file EPUB kamu
+        var rendition = book.renderTo("viewer", {
+            width: "100%",
+            height: "100%"
+        });
+        rendition.display();
+    </script>
+</body>
+</html>
