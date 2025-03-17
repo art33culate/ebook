@@ -25,6 +25,11 @@ document.addEventListener("contextmenu", function(e) {
             height: "100%"
         });
         rendition.display();
+
+        rendition.on("rendered", function(section){
+    console.log("Rendered: " + section.href);
+});
+
     </script>
 </body>
 </html>
